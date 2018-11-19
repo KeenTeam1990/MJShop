@@ -1,0 +1,46 @@
+<!--pages/book/book.wxml-->
+<view class='contanier'>
+  <view class='ar_coverpath'>
+    <image src='{{civerpath}}'></image>
+  </view>
+
+<view class='ar_picker'>
+  <view class='ar_cont_h1'>{{choose_name}}</view>
+  <!-- 选择联系人 -->
+  <view class='ar_cont_wrap'>
+     <picker range='{{range}}' value='{{index}}' bindchange='nameChange'>
+      <view>{{range[index]}}</view>
+     </picker>
+  </view>
+  <view class='ar_cont_h1'>{{choose_time}}</view>
+ <!-- 服务时间 -->
+ <view class='ar_date_time'>
+    <!-- 日期 -->
+    <view class='ar_date'>
+     <image src='../../images/date.png'></image>
+     <picker value='{{date}}' bindchange='bindDateChange' mode='date'>
+       <view>{{date}}</view>
+     </picker>
+    </view>  
+    <!-- 时间 -->
+   <view class='ar_time'>
+     <image src='../../images/time.png'></image>
+     <picker value='{{time}}' bindchange='bingTimeChange' model='time'>
+       <view>{{time}}</view>
+     </picker> 
+   </view>
+  </view>
+
+</view>
+ <!-- 留言信息 -->
+ <view>
+  <text class='ar_cont_h1'>留言信息</text>
+  <input class='msg_input' type='text' placeholder='请输入您的留言信息'></input>
+  <button bindtap='bindToastTap' class='ar_book'>确认预约</button>
+ 
+ 
+ </view>
+
+
+
+</view>

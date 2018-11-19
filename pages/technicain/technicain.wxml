@@ -1,0 +1,38 @@
+<!--pages/technicain/technicain.wxml-->
+<view class='container'>
+ <scroll-view class='page-body' scroll-y='true' bindscrolltolower='loadMore'>
+   <view class='ar_picker_wrap'>
+     <picker value='{{index}}' range="{{caseArray}}" bindchange='namechange'>
+       <view>{{caseArray[index]}}</view>
+     </picker>
+   </view>
+  <!-- 列表 -->
+  <view class='nav_section'>
+    <block wx:for="{{list[index]}}" wx:key="this">
+     <view class='nav_section_items' data-avatar='{{item.avatar}}' data-company='{{item.company}}' data-price='{{item.price}}' data-message='{{item.message}}' bindtap='navgetDail'>
+      <!-- 图片     -->
+       <view  class='section_image'>
+         <image src='{{item.avatar}}'></image>
+       </view>
+      <!-- 内容 -->
+      <view class='section_con'>
+        <!-- 公司 -->
+        <view class='section_con_sub'>
+          <text>{{item.company}}</text>
+        </view>
+        <!-- 价格 -->
+        <view class='section_con_price'>
+          <text>{{item.nickname}}</text>
+          <text class='price'>{{item.price}}</text> 
+        </view>
+        <!-- 资料 -->
+         <view class='message'>
+          <text>{{item.message}}</text>
+         </view>
+
+      </view> 
+     </view>
+    </block>
+  </view>
+ </scroll-view>
+</view>

@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<view class='container'>
+<scroll-view class='page-body'  scroll-y="true" bindscrolltolower="laodMore">
+   <view class='swiper'>
+    <swiper interval='{{interval}}' duration="{{duration}}" vertical='{{vertical}}' circular='{{circular}}' indicator-dots='indicatordots'  autoplay='{{autoplay}}'>
+     <block wx:for-items="{{banner_url}}"wx:key="this">
+      <swiper-item>
+        <image src='{{item}}'></image>
+      </swiper-item>
+     </block>
+    </swiper>
+   </view>
+   <!-- 导航 -->
+    <view class='nav_top'>
+       <block wx:for="{{navTopItems}}"wx:key="this">
+        <view class="nav_top_item {{curNavId==item.id?'color_'+colors[index]:''}}" data-id='{{item.id}}' data-index="{{index}}" bindtap='switchTap'>
+          <image src='{{item.icon}}'></image>
+          <text>{{item.title}}</text>
+        </view>
+       </block>
+    </view>
+    <!-- 表格CELL -->
+    <view class='nav_section'>
+      <view wx:if="{{list[curIndex]}}">
+       <block wx:for="{{list[curIndex]}}" wx:key="this">
+         <view class='nav_section_item'data-civerpath='{{item.civerpath}}' data-subject='{{item.subject}}' data-price='{{item.price}}' data-message='{{item.message}}' bindtap="navigateDatail" >
+         <!-- 图片 -->
+          <view class='section_images' >
+           <image src='{{item.civerpath}}'></image>
+          </view>
+          <!-- 说明 -->
+           <view class='section_con'>
+             <view class='section_con_Sub'>
+              <text>{{item.subject}}</text>
+             </view>
+             <view class='section_con_price'>
+              <text>{{item.price}}</text>
+             </view>
+             <view class='sectio_con_message'>
+              <text>{{item.message}}</text>
+             </view>
+           </view>
+
+            <!--预约-->
+             <view>
+              <view class="section_book" data-civerpath='{{item.civerpath}}' data-subject='{{item.subject}}' data-price='{{item.price}}' data-message='{{item.message}}' catchtap="bookTap" >
+               <text>预约</text>
+              </view>
+             </view>
+
+         </view>
+       </block>
+      </view>
+    </view>
+
+
+
+
+
+
+</scroll-view>
+</view>

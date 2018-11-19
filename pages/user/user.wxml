@@ -1,0 +1,41 @@
+<!--pages/user/user.wxml-->
+<view class='container'>
+  <!-- 个人信息 -->
+  <view class='user_base_info'>
+     <!-- 图片 -->
+     <view class='user_avatar'>
+        <image src="../../images/default_pic.png"></image>
+     </view>
+     <!-- 右边信息 -->
+     <view class='user_info'>
+       <text>
+          联系人：赵先生
+          电话:021-88888888
+          地址：上海市浦东新区唐镇上丰路
+       </text>
+     </view>
+  </view>
+
+  <!-- 地址 -->
+  <view class='uer_addr_message'>
+    <view class='user_addr_title'>联系我们</view>
+    <view class='user_addr_item'>
+      <text class="addr_sub">上海市浦东新区唐镇上丰路</text>
+      <!-- <text class="addr_sub">贵阳市大营坡万江小区</text>
+      <text class="addr_sub">贵阳市大营坡万江小区</text>
+      <text class="addr_sub">贵阳市大营坡万江小区</text> -->
+    </view>
+  <!-- 查看地址 -->
+   <button type="primary" class="btn" bindtap="map_btn">查看我当前的位置</button>
+  </view>
+
+
+
+
+
+
+
+
+
+
+</view>

@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/book/book",
+    "pages/detail/detail",
+    "pages/technicain/technicain",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "程序开发制作",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index_icon.png",
+        "selectedIconPath": "images/index_icon_HL.png"
+      },
+      {
+        "pagePath": "pages/technicain/technicain",
+        "text": "案例",
+        "iconPath": "images/skill_icon.png",
+        "selectedIconPath": "images/skill_icon_HL.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我们",
+        "iconPath": "images/user_icon.png",
+        "selectedIconPath": "images/user_icon_HL.png"
+      }
+    ]
+  }
+}

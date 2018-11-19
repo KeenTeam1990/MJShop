@@ -1,0 +1,37 @@
+<!--pages/detail/detail.wxml-->
+<view class='container'>
+<!-- 头部背景图片 -->
+  <view class='ar_coverpath'>
+    <image src='{{civerpath}}'></image>
+  </view>
+<!-- 头部详情 -->
+<view  class='ar_cont'>
+  <text class='ar_cont_h1'>{{subject}}</text>
+  <text class='ar_cont_price'>价格：{{price}}</text>
+   <view class="spaceholder"></view>
+  <text class='cont'>{{message}}</text>
+
+   <view class="ar_line"></view>
+
+  <text class="ar_cont_h1">详情描述</text>
+      <text class="cont">
+      美甲班爱尚美集团全国连锁,统一课程和学费,全国8个主要城市开设分校,1万家就业合作单位,每年向社会输送2万名美业人才.中短期精英培训美甲班爱尚美集团全国连锁,统一课程和学费,全国8个主要城市开设分校,1万家就业合作单位,每年向社会输送2万名美业人才.中短期精英培
+      </text>
+      <button class="ar_book" bindtap="bookTap">立即购买</button>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

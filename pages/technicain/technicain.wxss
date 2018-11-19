@@ -1,0 +1,50 @@
+/* pages/technicain/technicain.wxss */
+.ar_picker_wrap{
+  width: 670rpx;
+  margin: 20rpx auto;
+  padding: 20rpx;
+  border: 2rpx solid #ccc;
+  font-size: 30rpx;
+  border-radius: 20rpx;
+}
+.nav_section{
+  width: 100%;
+}
+.nav_section_items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+.nav_section:active{
+  background: #ddd;
+}
+.section_image image{
+  width: 158rpx;
+  height: 158rpx;
+  display: inline-block;
+}
+.section_con{
+  flex: 6;
+  font-size: 26rpx;
+  color: #a9a9a9;
+  padding-left: 40rpx;
+}
+.section_con_sub{
+  font-size: 30rpx;
+  color: #000;
+  line-height: 60rpx;
+  margin-bottom: 10rpx;
+}
+.section_con_price{
+  font-size: 32rpx;
+  color: #000;
+}
+.section_con_price .price{
+  padding-left: 18rpx;
+  color: red;
+}
+.message{
+  padding-top: 10rpx; 
+}
