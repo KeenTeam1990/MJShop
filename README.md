@@ -1,6 +1,6 @@
-# weapp-douban-book
+# MJShop
 
-微信小程序 - 豆瓣读书
+微信小程序 - 商城
 
 项目说明
 
