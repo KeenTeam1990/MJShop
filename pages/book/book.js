@@ -9,13 +9,13 @@ Page({
     choose_time: '服务时间',
     index: 0,
     range: [
-      '贵州金阳新区，李先生，电话：18786056435',
-      '安顺新区，王先生，电话：18786056435',
-      '阳关小区，李先生，电话：18786056435',
-      '大营坡王江小区，李先生，电话：18786056435',
-      '贵州花溪金阳新区，李先生，电话：18786056435'
+      '上海浦东新区，李先生，电话：18786056435',
+      '上海浦东新区，王先生，电话：18786056435',
+      '上海浦东新区，电话：18786056435',
+      '上海浦东新区，李先生，电话：18786056435',
+      '上海浦东新区，李先生，电话：18786056435'
     ],
-    date: '2016-5-26',
+    date: '2018-12-26',
     time: "19:34",
     showToastBol: true,
     subject: '',
@@ -34,13 +34,19 @@ Page({
     let price = options.price;
     let message = options.message;
     let civerpath = options.civerpath;
-    that.setData({
-      subject: subject,
-      price: price,
-      message: message,
-      civerpath: civerpath,
-    })
 
+    wx.getStorage({
+      key: 'civerpath',
+      success: function (res) {
+        that.setData({
+          subject: subject,
+          price: price,
+          message: message,
+          civerpath: res.data,
+        })
+
+      },
+    })
 
   },
 

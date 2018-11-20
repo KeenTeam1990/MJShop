@@ -138,7 +138,11 @@ Page({
     var subject = res.currentTarget.dataset.subject;
     var price = res.currentTarget.dataset.price;
     var message = res.currentTarget.dataset.message;
-    var civerpath = res.currentTarget.dataset.civerpath;
+    var civerpath = res.currentTarget.dataset.civerpath ;
+    wx.setStorage({
+      key: 'civerpath',
+      data: res.currentTarget.dataset.civerpath,
+    }) 
     wx.navigateTo({
       url: '../book/book?subject=' + subject + '&price=' + price + '&message=' + message + '&civerpath=' + civerpath,
 
