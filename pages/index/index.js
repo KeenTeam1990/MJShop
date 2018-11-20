@@ -52,11 +52,14 @@ Page({
     var price = res.currentTarget.dataset.price;
     var message = res.currentTarget.dataset.message;
     var civerpath = res.currentTarget.dataset.civerpath;
+    wx.setStorage({
+      key: 'civerpath',
+      data: civerpath,
+    })
   wx.navigateTo({
     url: '../detail/detail?subject=' + subject + '&price=' + price + '&message=' + message + '&civerpath=' + civerpath,
    
   })
-
   },
 
   switchTap:function(res){

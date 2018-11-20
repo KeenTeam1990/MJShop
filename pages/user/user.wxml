@@ -4,7 +4,7 @@
   <view class='user_base_info'>
      <!-- 图片 -->
      <view class='user_avatar'>
-        <image src="../../images/default_pic.png"></image>
+        <image src="http://img1.imgtn.bdimg.com/it/u=3018401455,3285222202&fm=11&gp=0.jpg"></image>
      </view>
      <!-- 右边信息 -->
      <view class='user_info'>
@@ -28,14 +28,6 @@
   <!-- 查看地址 -->
    <button type="primary" class="btn" bindtap="map_btn">查看我当前的位置</button>
   </view>
-
-
-
-
-
-
-
-
 
 
 </view>

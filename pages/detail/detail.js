@@ -8,7 +8,12 @@ Page({
     subject:'',
     price:'',
     message:'',
-    civerpath:''
+    civerpath:'',
+    timeStamp:'',
+    nonceStr:'',
+    package:'',
+    signType:'',
+    paySign:''
   },
 
   /**
@@ -20,12 +25,68 @@ Page({
     let price = options.price;
     let message = options.message;
     let civerpath = options.civerpath;
-    that.setData({
-      subject: subject,
-      price: price,
-      message: message,
-      civerpath: civerpath,
+   
+    wx.getStorage({
+      key: 'civerpath',
+      success: function(res) {
+        that.setData({
+          subject: subject,
+          price: price,
+          message: message,
+          civerpath: res.data,
+        })
+
+      },
     })
+  },
+
+  bookTap:function(){
+  console.log('bookTap')
+   var that = this;
+    wx.getStorage({
+      key: 'openid',
+      success: function(res) {
+       wx.request({
+         url: 'https://www.baidu.com',
+         data:{
+          
+           openid: res.data,
+           fee: '1', //支付金额
+           details: '微信小程序开发',//支付商品的名称
+         },
+        
+         success:function(result){
+          if(result.data){
+          wx.requestPayment({
+            timeStamp: result.data['timeStamp'],
+            nonceStr: result.data['nonceStr'],
+            package: result.data['package'],
+            signType: 'MD5',
+            paySign: result.data['paySign'],
+
+            'success':function(successret){
+
+              console.log('支付成功');
+
+            }
+
+
+
+          })
+
+
+                    
+          }
+         
+
+         }
+       })
+
+
+      },
+    })
+
+
 
   },
 
