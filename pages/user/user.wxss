@@ -19,9 +19,9 @@
   height: 100%;
   border-radius: 100%;
 }
-.user_avatar image:hover{
+/* .user_avatar image:hover{
   opacity: 0.5;
-}
+} */
 .user_info{
   line-height: 40rpx;
 }

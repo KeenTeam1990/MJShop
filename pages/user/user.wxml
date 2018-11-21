@@ -3,8 +3,8 @@
   <!-- 个人信息 -->
   <view class='user_base_info'>
      <!-- 图片 -->
-     <view class='user_avatar'>
-        <image src="http://img1.imgtn.bdimg.com/it/u=3018401455,3285222202&fm=11&gp=0.jpg"></image>
+     <view class='user_avatar' bindtap="bindViewTap" >
+        <image src="{{avatarUrl}}"></image>
      </view>
      <!-- 右边信息 -->
      <view class='user_info'>

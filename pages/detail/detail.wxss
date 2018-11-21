@@ -53,7 +53,7 @@
 }
 .cont{
 
-   margin: 40rpx 0rpx 10rpx;
+  margin: 40rpx 0rpx 10rpx;
 
 }
 

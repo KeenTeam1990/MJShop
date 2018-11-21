@@ -6,7 +6,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userInfo: {}
+    userInfo: {},
+    avatarUrl:'http://img1.imgtn.bdimg.com/it/u=3018401455,3285222202&fm=11&gp=0.jpg'
+  },
+
+  //事件处理函数
+  bindViewTap:function(){
+   
+   var that= this;
+   wx.chooseImage({
+     count:1,
+     sizeType:['original','compressed'],
+     sourceType:['album','camera'],
+     success: function(res) {
+     var tempFilePaths = res.tempFilePaths
+     that.setData({
+
+       avatarUrl: tempFilePaths[0]
+
+     })
+
+
+
+     },
+   })
+
+
   },
 
   /**
