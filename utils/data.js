@@ -6,25 +6,25 @@ function getBannerImageUrl(){
         id: null,
         title: null,
         picName: 'http://img1.imgtn.bdimg.com/it/u=1339638971,379207418&fm=11&gp=0.jpg',
-        skpUrl: 'https://ss1.2424.com'
+        skpUrl: 'http://wx.thjygjc.com/voice/loading.html'
       },
       {
         id: null,
         title: null,
         picName: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3727049144,611328415&fm=26&gp=0.jpg',
-        skpUrl: 'https://ss1.2424.com'
+        skpUrl: 'http://wx.thjygjc.com/voice/loading.html'
       },
       {
         id: null,
         title: null,
         picName: 'http://img3.imgtn.bdimg.com/it/u=395362782,4185777361&fm=26&gp=0.jpg',
-        skpUrl: 'https://ss1.b12121.com'
+        skpUrl: 'http://wx.thjygjc.com/voice/loading.html'
       },
       {
         id: null,
         title: null,
         picName: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=971718766,911100409&fm=26&gp=0.jpg',
-        skpUrl: 'https://ss1.45435.com'
+        skpUrl: 'http://wx.thjygjc.com/voice/loading.html'
       }
     ]
   return arr;

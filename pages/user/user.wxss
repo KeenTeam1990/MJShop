@@ -33,6 +33,11 @@
 .user_addr_title{
   font-size: 35rpx;
   padding: 20rpx;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: limegreen;  
+  padding-left: 10rpx;
+
 }
 .user_addr_item{
   padding:20rpx 40rpx;

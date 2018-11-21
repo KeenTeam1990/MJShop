@@ -14,13 +14,21 @@
   opacity: 0.8;
 }
 .ar_cont{
- padding: 20rpx 20rpx;
+ padding: 20rpx 0rpx;
  font-size: 30rpx;
  color: #666;
  line-height: 45rpx;
  margin-bottom: 40rpx;
 
 }
+
+.ar_cont_h1{
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: limegreen;  
+  padding-left: 10rpx;
+}
+
 .ar_cont_h1,.ar_cont_price{
   font-size: 32rpx;
   color: #000;
@@ -41,6 +49,11 @@
 }
 .spaceholder{
  content: '';
+
+}
+.cont{
+
+   margin: 40rpx 0rpx 10rpx;
 
 }
 
