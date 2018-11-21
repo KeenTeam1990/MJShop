@@ -46,6 +46,15 @@ Page({
     })
 
   },
+
+  bindBannerTap:function(res){
+  
+  wx.navigateTo({
+    url: '../web/web?skpUrl=' + res.currentTarget.dataset.banner,
+  })
+
+  },
+
   //跳转到详情页
   navigateDatail:function(res){
     var subject = res.currentTarget.dataset.subject;

@@ -4,7 +4,8 @@
     "pages/book/book",
     "pages/detail/detail",
     "pages/technicain/technicain",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/web/web"
   ],
   "window":{
     "backgroundTextStyle":"light",

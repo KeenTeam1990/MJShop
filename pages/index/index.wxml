@@ -5,7 +5,7 @@
     <swiper interval='{{interval}}' duration="{{duration}}" vertical='{{vertical}}' circular='{{circular}}' indicator-dots='indicatordots'  autoplay='{{autoplay}}'>
      <block wx:for-items="{{banner_url}}"wx:key="this">
       <swiper-item>
-        <image src='{{item}}'></image>
+        <image src='{{item.picName}}' data-banner="{{item.skpUrl}}" bindtap='bindBannerTap'></image>
       </swiper-item>
      </block>
     </swiper>
