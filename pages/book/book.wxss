@@ -70,5 +70,5 @@
   font-size: 32rpx;
   color: #fff;
   border-radius: 0rpx;
-  margin: 40rpx 0rpx 10rpx;
+  margin: 80rpx 10rpx 10rpx;
 }

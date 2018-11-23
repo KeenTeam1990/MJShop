@@ -5,7 +5,7 @@
   width: 100%;
   border-bottom: 2rpx solid #ccc;
   padding: 80rpx 0;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 35rpx;
 
 }
@@ -24,6 +24,7 @@
 } */
 .user_info{
   line-height: 40rpx;
+  font-size: 35rpx;
 }
 .uer_addr_message{
   width: 100%;
