@@ -16,10 +16,10 @@
 这个Demo纯属为新手练习<br>
 https://github.com/DriverUI/weapp-douban-book
 
-![img/preview.gif](img/preview.gif)
+![img/preview.gif](images/preview.jpeg)
 
 真机截图
-![img/img.jpg](img/img.jpg)
+![img/img.jpg](images/img.jpeg)
 
 真机截图
-![img/img.jpg](images/img.jpg)
+![img/img.jpg](images/Wechat.jpeg)
